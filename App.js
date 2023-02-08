@@ -50,7 +50,106 @@
 
 // console.log('message')
 
-//handlinhg paths
-const path = require("path")
-var pathObject = path.parse(__filename);
-console.log(pathObject)
+//handlinhg path module
+// const path = require("path")
+// var pathObject = path.parse(__filename);
+// console.log(pathObject)
+
+//handling os module
+
+const os = require('os');
+var totalMemory = os.totalmem();
+var freeMemory = os.freemem();
+
+//console.log("Total memory:"+totalMemory);
+
+console.log(`Total memory ${totalMemory}`);
+console.log(`Free memory ${freeMemory}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
