@@ -79,11 +79,11 @@
 const EventEmitter = require('events');
 const emitter = new EventEmitter();
 //register a listener
-emitter.on('messageLogged',function(){
- console.log('Listener Called')
+emitter.on('messageLogged',function(arg){
+ console.log('Listener Called', arg)
 });
 //raise an event
-emitter.emit('messageLogged');
+// emitter.emit('messageLogged');
 
 //adding event arguments
 emitter.emit('messageLogged', {id:1, url: 'http//'});
