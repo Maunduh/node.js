@@ -85,6 +85,9 @@ emitter.on('messageLogged',function(){
 //raise an event
 emitter.emit('messageLogged');
 
+//adding event arguments
+emitter.emit('messageLogged', {id:1, url: 'http//'});
+
 
 
 
