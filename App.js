@@ -25,3 +25,16 @@ setInterval();
 clearInterval();
 
 //variables in node.js are not available in the the global scope
+
+
+var sayHello = function (){
+
+}
+
+//the above variable can be accessed through:
+window.sayHello
+//when defined afresh in another file the new defination overrides the old one.
+//To avoid overriding node.js employs the use of small components called modules.
+//Every file in a node application can be considered a module.
+//The variables defined within a module are only availabe in that module and not in global space.
+//To use an object within a module it needs to be exported explicitly.
