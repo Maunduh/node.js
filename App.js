@@ -57,16 +57,20 @@
 
 //handling os module
 
-const os = require('os');
-var totalMemory = os.totalmem();
-var freeMemory = os.freemem();
+// const os = require('os');
+// var totalMemory = os.totalmem();
+// var freeMemory = os.freemem();
 
-//console.log("Total memory:"+totalMemory);
+// //console.log("Total memory:"+totalMemory);
 
-console.log(`Total memory ${totalMemory}`);
-console.log(`Free memory ${freeMemory}`);
+// console.log(`Total memory ${totalMemory}`);
+// console.log(`Free memory ${freeMemory}`);
 
+// working with files in node
 
+const fs = require('fs');
+const files = fs.readdirSync('./');
+console.log(files)
 
 
 
