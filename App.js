@@ -68,13 +68,22 @@
 
 // working with files in node
 
-const fs = require('fs');
+// const fs = require('fs');
 
-fs.readdir('./', function(error, files){
-    if (error) console.log('Error', error);
-    else console.log('Results', files);
+// fs.readdir('./', function(error, files){
+//     if (error) console.log('Error', error);
+//     else console.log('Results', files);
+// });
+
+// working with events
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
+//register a listener
+emitter.on('messageLogged',function(){
+ console.log('Listener Called')
 });
-
+//raise an event
+emitter.emit('messageLogged');
 
 
 
