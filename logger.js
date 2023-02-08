@@ -4,6 +4,8 @@ function log(message){
     //send an http request
     console.log(message);
 }
+//exporting a single functio?
+// module.exports.endPoint = url;
+
 //exporting a single function
-module.exports.log = log;
-module.exports.endPoint = url;
+module.exports = log

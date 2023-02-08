@@ -43,3 +43,14 @@
 // console.log(module)
 
 //Creating and loading a module
+
+//importing logger
+
+// const log = require('./logger')
+
+// console.log('message')
+
+//handlinhg paths
+const path = require("path")
+var pathObject = path.parse(__filename);
+console.log(pathObject)
